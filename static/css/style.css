@@ -1,0 +1,362 @@
+*{
+    box-sizing:border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 100%;
+}
+
+nav{
+
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    height: 100px;
+
+    align-items: center;
+    font-size: 100%;
+    box-shadow: 0 10PX lightblue;
+
+    border-radius: 10px;
+
+}
+#search-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.search-box{
+    height: 3.5rem;
+    width: 100%;
+
+    border-radius: 10px;
+}
+#search {
+    height: 3.5rem;
+    font-size: 1.8em;
+    width: 70%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+#search-btn{
+    height: 3.5rem;
+    /* margin: 1%; */
+    width: 15%;
+    border-radius: 10px;
+}
+nav h1{
+    margin: 4%;
+    color: blue;
+    font-size: 1.7rem;
+
+    width: 20%;
+}
+a{
+    text-decoration: none;
+}
+.dashboard{
+    /* display: flex; */
+
+    height: 80vh;
+    width: 100%;
+}
+.board{
+
+    width: 20%;
+    margin: 0 2% 0 0;
+}
+.board h1{
+    font-size: 2rem;
+    /* display: flex; */
+    align-items: center;
+    margin-top: 40%;
+    height: 10%;
+    border-bottom: 1px solid grey;
+    border-radius: 5px;
+}
+.board h2{
+    font-size: 1.5rem;
+    height: 10%;
+    margin-top: 10px;
+    color: white;
+    background-color: blue;
+
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+.icon{
+    width: 15%;
+
+    font-size: 2.5rem;
+}
+.add-board{
+    font-size: 2rem;
+    float: right;
+    /* background-color: red; */
+}
+.container{
+
+    width: 100%;
+    margin: 1% 0 0 0;
+}
+
+.add-new-task button{
+    display: flex;
+    float: right;
+    margin: 1%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: blue;
+    height: 7vh;
+    width: 15%;
+    align-items: center;
+    padding-left: 2.5%;
+    border-radius: 10px;
+}
+.dashboard{
+    border: 1px solid blue;
+    height: 100%;
+    width: 100%;
+    margin-top: 8%;
+}
+h1{
+    font-size: 3rem;
+}
+#newtasksubmit{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    float: right;
+    margin: 3% 3% 0 0;
+
+}
+#subtasksubmit,#edit,#delete{
+    height: 100%;
+    width: 5vh;
+
+}
+#edit{
+    background-color: rgb(223, 223, 93);
+    
+}
+#delete{
+    background-color: red;
+}
+#view{
+    background-color: blue;
+}
+#data-table,#sub-data-table{
+    width:94%;
+    font-size: 1rem;
+    margin: 2% 3% 0 3%;
+}
+th:nth-child(1),
+td:nth-child(1) {
+    justify-content: center;
+  width: 3%; /* Change this value to your desired width */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    justify-content: center;
+  width: 40%; /* Change this value to your desired width */
+}
+th:nth-child(3),
+td:nth-child(3),th:nth-child(4),
+td:nth-child(4) {
+    justify-content: center;
+  width: 10%; /* Change this value to your desired width */
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+
+    justify-content: center;
+  width: 10%; /* Change this value to your desired width */
+}
+
+td{
+text-align: center;
+    padding: 2% ;
+    /* color: red; */
+}
+
+#data-table input{
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+}
+td{
+    border-bottom: 1px solid blue;
+}
+tbody{
+    border-top: 1px solid red;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(44, 163, 179);
+}
+#newtasksubmit{
+    border-radius: 5px;
+    height: 3rem;
+    width: 10%;
+    z-index: 1;
+    justify-content: center;
+    background-color: blue;
+    border: none;
+}
+
+#new-task-form{
+    padding: 10%;
+    margin: 0;
+    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  z-index: 1;
+  /* opacity: 0; */
+  transition: opacity .5s ease-in-out;
+    
+}
+#subtask{
+
+    padding: 10%;
+    margin: 0;
+    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  z-index: 1;
+  /* opacity: 0; */
+  transition: opacity .5s ease-in-out;
+}
+#new-task-form input,#status,#subtask input{
+ 
+    display: flex;
+    margin: 1%  10%  0 10%   ;
+    width: 80%;
+    height: 7vh;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    z-index: 8;
+
+}
+#close,#close1{
+    display: flex;
+    float: right;
+    font-size: 3rem;
+}
+#objecthisplay{
+    width: 80%;
+}
+#objecthisplay h1,h2,h3{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#objecthisplay h1:first-child{
+
+    display: flex;
+    float: left;
+    width: 10%;
+}
+#objecthisplay h1:not(first-child){
+    /* width: 10%; */
+    font-size: 200%;
+    border-bottom: 2px solid blue;
+
+}
+#objecthisplay input{
+    height: 7%;
+    width: 10%;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    float: right;
+}
+#objecthisplay p{
+    font-size: 2rem;
+}
+
+#objecthisplay h2{
+    font-size: 2rem;
+    display: flex;
+
+    float: left;
+    width: 33%;
+}
+#objecthisplay h3{
+    display: block;
+
+    font-size: 3rem;
+}
+#sub-data-table input{
+    width:94%;
+    font-size: 1rem;
+    margin: 2% 3% 0 3%;
+    height: 3rem;
+    
+}
+#objecthisplay{
+    padding: 3%;
+    margin: 0;
+    /* display: none; */
+  position: fixed;
+  border-radius: 10px;
+  top: 3%;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  background-color: lightblue;
+  /* z-index: 1; */
+  /* opacity: 0; */
+  transition: opacity .5s ease-in-out;
+
+}
+#objecviewclose{
+    padding: 3%;
+    margin: 0;
+    /* display: none; */
+  position: fixed;
+  border-radius: 10px;
+  top: 0%;
+  right: 0%;
+  color: red;
+  /* z-index: 1; */
+  /* opacity: 0; */
+  transition: opacity .5s ease-in-out;
+
+}
+#viewobject{
+    border: 1px solid red;
+    background-color: #00000091;
+    display: flex;
+    float: left;
+    height: 100vh;
+    width: 100%;
+    padding: 3%;
+    margin: 0;
+    display: none;
+  position: fixed;
+  border-radius: 10px;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  /* background-color: lightblue; */
+  /* z-index: 1; */
+  /* opacity: 0; */
+  transition: opacity .5s ease-in-out;
+
+}

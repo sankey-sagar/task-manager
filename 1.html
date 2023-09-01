@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <div>
+        <h1>hello</h1>
+        <form action="" name="info">
+            <label for="tid">id
+                <input type="number" id="tid">
+            </label>
+            <lable for="name">Name
+                <input type="text" id="name">
+            </lable>
+            <lable for="sdate">start date
+                <input type="datetime" id="sdate">
+            </lable>
+            <lable for="edate">end date
+                <input type="datetime" id="edate">
+            </lable>
+            <lable for="status">status
+                <select>
+                    <option value="In-Progress">In-Progress</option>
+                    <option value="Completed"> Completed</option>
+                    <option value="DuePassed">DuePassed</option>
+                    <option value="Canceled">Canceled</option>
+                </select>
+            </lable>
+            <button id="new-task">Submit</button>
+        </form>
+        <table style="width:100%">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+          </table>
+    </div>
+</body>
+<script src="./static/js/main.js"></script>
+</html>

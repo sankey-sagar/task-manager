@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+
+    <title>Task Manager</title>
+</head>
+<body>
+    <header>
+        <nav>
+            </a>
+            <h1>
+
+                Sagar's Task  <br>Manager
+            </h1>
+            <div class="search-box">
+                <input type="text" placeholder="Search" id="search"> 
+                <button type="submit" id="search-btn"> Search</button>
+            </div>
+        </nav>
+    </header>
+    <input type="button" onclick=newtaskpopup() name="submit" id="newtasksubmit" value="Add New Task"> 
+    <div id="new-task-form" class="popup">
+        <h2 id="close" onclick="closepopup()">X</h2>
+        <form action="/" name="info">
+            <input type="number" name="tid" placeholder="1" required>
+            <input type="text" name="tname" placeholder="task" required>
+            <input type="datetime-local" name="sdate" placeholder="sdate" required>
+            <input type="datetime-local" name="edate" placeholder="sdate" required>
+            <select name="status" id="status"  required>
+                <option value="inprogress">In-Progress</option>
+                <option value="completed">completed</option>
+                <option value="cancled">cancled</option>
+                <option value="deupassed">deupassed</option>
+            </select>
+            <input type="button" onclick=addnewtask() name="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <div class="dashboard">
+    <h1>Task Board</h1>
+    <table id="data-table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>sdate</th>
+            <th>edate</th>
+            <th>status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- Table data will be populated here -->
+          <tr>
+            <td>1</td>
+            <td>This is demo task</td>
+            <td>23/5/2023</td>
+            <td>25/5/2023</td>
+            <td>In-progress</td>
+            <td><input type="button" onclick=edititempop(0) name="submit" id="edit" value="Edit"></td>
+            <td><input type="button" onclick=deleteitem(0) name="submit" id="delete" value="Delete"></td>
+            <td><input type="button" onclick=view(0) name="submit" id="view" value="View"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div id="subtask">
+        
+      </div>
+      
+    <div id="viewobject">
+        
+      
+    </div>
+</body>
+<script src="./static/js/index.js"></script>
+
+</html>

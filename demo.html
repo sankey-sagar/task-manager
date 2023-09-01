@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,th{
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <a href="demo.html">demo me</a>
+    <form action="/" name="info">
+        <input type="number" name="tid" placeholder="1">
+        <input type="text" name="tname" placeholder="task">
+        <input type="text" name="sdate" placeholder="sdate">
+        <input type="text" name="edate" placeholder="sdate">
+        <select name="status" id="status" >
+            <option value="inprogress">In-Progress</option>
+            <option value="completed">completed</option>
+            <option value="cancled">cancled</option>
+            <option value="deupassed">deupassed</option>
+        </select>
+        <input type="button" name="submit" id="submit">
+    </form>
+
+    <table>
+        <tr>
+           
+        </tr>
+    </table>
+    <table id="data-table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>sdate</th>
+            <th>edate</th>
+            <th>status</th>
+            <th>add sub task</th>
+            <th>edit</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table data will be populated here -->
+        </tbody>
+      </table>
+      <div id="subtask"></div>
+      
+    <div id="objecthisplay"></div>
+</body>
+<script src="./static/js/1.js"></script>
+</html>
